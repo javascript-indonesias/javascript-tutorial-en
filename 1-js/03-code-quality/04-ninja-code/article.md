@@ -1,6 +1,11 @@
 # Ninja code
 
-Programmer ninjas of the past used these tricks to make code maintainers cry.
+
+```quote author="Confucius"
+Learning without thought is labor lost; thought without learning is perilous.
+```
+
+Programmer ninjas of the past used these tricks to make sharpen the mind of code maintainers.
 
 Code review gurus look for them in test tasks.
 
@@ -12,7 +17,7 @@ Read them carefully and find out who you are -- a ninja, a novice, or maybe a co
 
 
 ```warn header="Irony detected"
-Many start following ninja paths. Few succeed. 
+Many try to follow ninja paths. Few succeed.
 ```
 
 
@@ -80,7 +85,7 @@ While choosing a name try to use the most abstract word. Like `obj`, `data`, `va
 
     Give them a try. A young ninja may wonder -- do such names make the code worse? Actually, yes!
 
-    From one hand, the variable name still means something. It says what's inside the variable: a string, a number or something else. But when an outsider tries to understand the code, he'll be surprised to see that there's actually no information at all!
+    Sure, the variable name still means something. It says what's inside the variable: a string, a number or something else. But when an outsider tries to understand the code, he'll be surprised to see that there's actually no information at all!
 
     Indeed, the value type is easy to find out by debugging. But what's the meaning of the variable? Which string/number does it store? There's just no way to figure out without a good meditation!
 
