@@ -6,8 +6,6 @@ A platform may be a browser, or a web-server, or a washing machine, or another *
 
 A host environment provides platform-specific objects and functions additional to the language core. Web browsers give a means to control web pages. Node.JS provides server-side features, and so on.
 
-[cut]
-
 Here's a bird's-eye view of what we have when JavaScript runs in a web-browser:
 
 ![](windowObjects.png)
@@ -116,7 +114,7 @@ CSSOM specification
 HTML specification
 : Describes HTML language (tags etc.) and also BOM (browser object model) -- various browser functions: `setTimeout`, `alert`, `location` and so on, see <https://html.spec.whatwg.org>. It takes DOM specification and extends it with many additional properties and methods.
 
-Now we'll get down to learning DOM, because the document plays the central role in the UI, and working with it is very complex.
+Now we'll get down to learning DOM, because the document plays the central role in the UI.
 
 Please note the links above, as there's so much stuff to learn it's impossible to cover and remember everything.
 
