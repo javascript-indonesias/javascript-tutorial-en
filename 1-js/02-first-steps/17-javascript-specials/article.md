@@ -81,9 +81,10 @@ let x = 5;
 x = "John";
 ```
 
-There are 7 data types:
+There are 8 data types:
 
 - `number` for both floating-point and integer numbers,
+- `bigint` for integer numbers of arbitrary length,
 - `string` for strings,
 - `boolean` for logical values: `true/false`,
 - `null` -- a type with a single value `null`, meaning "empty" or "does not exist",
@@ -212,6 +213,7 @@ let age = prompt('Your age?', 18);
 switch (age) {
   case 18:
     alert("Won't work"); // the result of prompt is a string, not a number
+    break;
 
   case "18":
     alert("This works!");
