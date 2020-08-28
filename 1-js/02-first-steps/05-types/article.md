@@ -66,7 +66,7 @@ We'll see more about working with numbers in the chapter <info:number>.
 
 ## BigInt
 
-In JavaScript, the "number" type cannot represent integer values larger than <code>(2<sup>53</sup>-1)</code> (that's `9007199254740991`), or less than <code>-(-2<sup>53</sup>-1)</code> for negatives. It's a technical limitation caused by their internal representation.
+In JavaScript, the "number" type cannot represent integer values larger than <code>(2<sup>53</sup>-1)</code> (that's `9007199254740991`), or less than <code>-(2<sup>53</sup>-1)</code> for negatives. It's a technical limitation caused by their internal representation.
 
 For most purposes that's quite enough, but sometimes we need really big numbers, e.g. for cryptography or microsecond-precision timestamps.
 
@@ -81,7 +81,7 @@ const bigInt = 1234567890123456789012345678901234567890n;
 
 As `BigInt` numbers are rarely needed, we don't cover them here, but devoted them a separate chapter <info:bigint>. Read it when you need such big numbers.
 
-```smart header="Compatability issues"
+```smart header="Compatibility issues"
 Right now `BigInt` is supported in Firefox/Chrome/Edge, but not in Safari/IE.
 ```
 
