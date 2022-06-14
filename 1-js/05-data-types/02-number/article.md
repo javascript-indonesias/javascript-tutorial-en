@@ -50,7 +50,7 @@ let mсs = 0.000001;
 Just like before, using `"e"` can help. If we'd like to avoid writing the zeroes explicitly, we could write the same as:
 
 ```js
-let mcs = 1e-6; // six zeroes to the left from 1
+let mcs = 1e-6; // five zeroes to the left from 1
 ```
 
 If we count the zeroes in `0.000001`, there are 6 of them. So naturally it's `1e-6`.
@@ -63,6 +63,9 @@ In other words, a negative number after `"e"` means a division by 1 with the giv
 
 // -6 divides by 1 with 6 zeroes
 1.23e-6 === 1.23 / 1000000; // 0.00000123
+
+// an example with a bigger number
+1234e-2 === 1234 / 100; // 12.34, decimal point moves 2 times
 ```
 
 ### Hex, binary and octal numbers
@@ -428,6 +431,11 @@ For different numeral systems:
 - Can write numbers directly in hex (`0x`), octal (`0o`) and binary (`0b`) systems.
 - `parseInt(str, base)` parses the string `str` into an integer in numeral system with given `base`, `2 ≤ base ≤ 36`.
 - `num.toString(base)` converts a number to a string in the numeral system with the given `base`.
+
+For regular number tests:
+
+- `isNaN(value)` converts its argument to a number and then tests it for being `NaN`
+- `isFinite(value)` converts its argument to a number and returns `true` if it's a regular number, not `NaN/Infinity/-Infinity`
 
 For converting values like `12pt` and `100px` to a number:
 

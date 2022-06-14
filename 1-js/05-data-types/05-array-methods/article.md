@@ -249,6 +249,10 @@ alert( arr.indexOf(0) ); // 1
 alert( arr.indexOf(false) ); // 2
 alert( arr.indexOf(null) ); // -1
 
+let fruits = ['Plum', 'Apple', 'Orange', 'Plum']
+// note that the lastIndexOf method looks for from the end, but index counted from beginning
+alert( fruits.lastIndexOf(Plum)) // 3
+
 alert( arr.includes(1) ); // true
 ```
 
@@ -256,13 +260,14 @@ Note that the methods use `===` comparison. So, if we look for `false`, it finds
 
 If we want to check for inclusion, and don't want to know the exact index, then `arr.includes` is preferred.
 
-Also, a very minor difference of `includes` is that it correctly handles `NaN`, unlike `indexOf/lastIndexOf`:
+Also, a minor, but noteworthy feature of `includes` is that it correctly handles `NaN`, unlike `indexOf/lastIndexOf`:
 
 ```js run
 const arr = [NaN];
-alert( arr.indexOf(NaN) ); // -1 (should be 0, but === equality doesn't work for NaN)
+alert( arr.indexOf(NaN) ); // -1 (should be 0, but equality test === doesn't work for NaN)
 alert( arr.includes(NaN) );// true (correct)
 ```
+
 
 ### find and findIndex
 
