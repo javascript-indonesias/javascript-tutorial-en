@@ -96,7 +96,7 @@ The "trailing comma" style makes it easier to insert/remove items, because all l
 
 [recent browser="new"]
 
-Let's say we want a last element of the array.
+Let's say we want the last element of the array.
 
 Some programming languages allow to use negative indexes for the same purpose, like `fruits[-1]`.
 
@@ -153,9 +153,9 @@ A stack is usually illustrated as a pack of cards: new cards are added to the to
 
 For stacks, the latest pushed item is received first, that's also called LIFO (Last-In-First-Out) principle. For queues, we have FIFO (First-In-First-Out).
 
-Arrays in JavaScript can work both as a queue and as a stack. They allow you to add/remove elements both to/from the beginning or the end.
+Arrays in JavaScript can work both as a queue and as a stack. They allow you to add/remove elements, both to/from the beginning or the end.
 
-In computer science the data structure that allows this, is called [deque](https://en.wikipedia.org/wiki/Double-ended_queue).
+In computer science, the data structure that allows this, is called [deque](https://en.wikipedia.org/wiki/Double-ended_queue).
 
 **Methods that work with the end of the array:**
 
@@ -399,11 +399,11 @@ There is one more syntax to create an array:
 let arr = *!*new Array*/!*("Apple", "Pear", "etc");
 ```
 
-It's rarely used, because square brackets `[]` are shorter. Also there's a tricky feature with it.
+It's rarely used, because square brackets `[]` are shorter. Also, there's a tricky feature with it.
 
 If `new Array` is called with a single argument which is a number, then it creates an array *without items, but with the given length*.
 
-Let's see how one can shoot themself in the foot:
+Let's see how one can shoot themselves in the foot:
 
 ```js run
 let arr = new Array(2); // will it create an array of [2] ?
@@ -530,7 +530,7 @@ The call to `new Array(number)` creates an array with the given length, but with
 Getting the elements:
 
 - we can get element by its index, like `arr[0]`
-- also we can use `at(i)` method to get negative-index elements, for negative values of `i`, it steps back from the end of the array. In the rest it works same as `arr[i]`, if `i >= 0`.
+- also we can use `at(i)` method that allows negative indexes. For negative values of `i`, it steps back from the end of the array. If `i >= 0`, it works same as `arr[i]`.
 
 We can use an array as a deque with the following operations:
 
